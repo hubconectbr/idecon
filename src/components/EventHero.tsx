@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Monitor, Shield } from "lucide-react";
 import bannerIdecon from "@/assets/banner-principal-idecon.jpg";
+import logoIdecon from "/lovable-uploads/12c658bc-364f-47bc-be42-345c0029f431.png";
 
 const EventHero = () => {
   return (
@@ -8,9 +9,9 @@ const EventHero = () => {
       {/* Banner Principal */}
       <div className="absolute top-0 left-0 right-0 z-20">
         <img 
-          src={bannerIdecon} 
-          alt="Banner Principal IDECON" 
-          className="w-full h-24 md:h-32 object-cover opacity-90"
+          src="/lovable-uploads/9e8661fa-6029-4ff6-801f-7ba1928da1a0.png" 
+          alt="Banner Principal IDECON - Congresso Internacional" 
+          className="w-full h-32 md:h-40 lg:h-48 object-cover"
         />
       </div>
       
@@ -20,12 +21,16 @@ const EventHero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05),transparent_70%)]" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 mt-24 md:mt-32">
+      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 mt-32 md:mt-40 lg:mt-48">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* IDECON Logo Area */}
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 rounded-full mb-6 backdrop-blur-sm">
-              <Shield className="w-10 h-10 text-white" />
+            <div className="inline-flex items-center justify-center w-24 h-24 bg-white/10 rounded-full mb-6 backdrop-blur-sm p-2">
+              <img 
+                src={logoIdecon} 
+                alt="Logo IDECON" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-sm font-medium text-white/90 mb-2">INSTITUTO IDECON APRESENTA</div>
           </div>

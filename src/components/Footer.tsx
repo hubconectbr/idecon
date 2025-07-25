@@ -8,8 +8,12 @@ const Footer = () => {
           {/* IDECON Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <Shield className="w-6 h-6" />
+              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center p-1">
+                <img 
+                  src="/lovable-uploads/12c658bc-364f-47bc-be42-345c0029f431.png" 
+                  alt="Logo IDECON" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="font-bold text-lg">IDECON</div>
