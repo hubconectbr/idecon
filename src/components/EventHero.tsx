@@ -11,7 +11,7 @@ const EventHero = () => {
         <img 
           src="/lovable-uploads/9e8661fa-6029-4ff6-801f-7ba1928da1a0.png" 
           alt="Banner Principal IDECON - Congresso Internacional" 
-          className="w-full h-32 md:h-40 lg:h-48 object-cover"
+          className="w-full h-auto object-contain"
         />
       </div>
       
@@ -21,7 +21,7 @@ const EventHero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05),transparent_70%)]" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 mt-32 md:mt-40 lg:mt-48">
+      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32" style={{marginTop: '25vh'}}>
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* IDECON Logo Area */}
           <div className="mb-8">
