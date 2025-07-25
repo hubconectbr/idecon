@@ -64,21 +64,23 @@ const Speakers = () => {
           {/* Speakers Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {speakers.map((speaker, index) => (
-              <Card 
-                key={index} 
-                className="group hover:shadow-lg transition-all duration-300 border-l-4 border-l-primary hover:border-l-secondary"
+              <a
+                href={`mailto:contato@idecon.org.br?subject=Contato sobre ${speaker.name}`}
+                key={index}
+                className="block"
               >
-                <CardContent className="p-6">
-                  {speaker.image && (
-                    <div className="relative mb-6 overflow-hidden rounded-lg">
-                      <img 
-                        src={speaker.image} 
-                        alt={speaker.name}
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                    </div>
-                  )}
+                <Card className="group hover:shadow-lg transition-all duration-300 border-l-4 border-l-primary hover:border-l-secondary h-full cursor-pointer">
+                  <CardContent className="p-6 h-full flex flex-col">
+                    {speaker.image && (
+                      <div className="relative mb-6 overflow-hidden rounded-lg">
+                        <img 
+                          src={speaker.image} 
+                          alt={speaker.name}
+                          className="w-full h-64 object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+                      </div>
+                    )}
                   
                   <h3 className="text-xl font-bold text-foreground mb-2">
                     {speaker.name}
@@ -98,8 +100,9 @@ const Speakers = () => {
                       <div className="text-sm text-foreground">{speaker.keynote}</div>
                     </div>
                   )}
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
           

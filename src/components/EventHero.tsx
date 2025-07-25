@@ -1,16 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Monitor, Shield } from "lucide-react";
+import bannerIdecon from "@/assets/banner-principal-idecon.jpg";
 
 const EventHero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden">
+      {/* Banner Principal */}
+      <div className="absolute top-0 left-0 right-0 z-20">
+        <img 
+          src={bannerIdecon} 
+          alt="Banner Principal IDECON" 
+          className="w-full h-24 md:h-32 object-cover opacity-90"
+        />
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.1),transparent_70%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.05),transparent_70%)]" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
+      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 mt-24 md:mt-32">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* IDECON Logo Area */}
           <div className="mb-8">

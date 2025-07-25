@@ -3,6 +3,7 @@ import AboutEvent from "@/components/AboutEvent";
 import Speakers from "@/components/Speakers";
 import EventInfo from "@/components/EventInfo";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Speakers />
       <EventInfo />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
